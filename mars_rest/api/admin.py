@@ -5,4 +5,4 @@ from .models import Temperature
 @admin.register(Temperature)
 class TemperatureAdmin(admin.ModelAdmin):
     list_display = ['Sol', 'max_temp', 'min_temp',
-                'avg_temp', 'season', 'date']
+                'avg_temp', 'season', 'first_utc', 'last_utc']
