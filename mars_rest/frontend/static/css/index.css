@@ -11,9 +11,34 @@ html, body{
     height: 100%;
     left: 0;
     top: 0;
+    background-image: url('../images/mars_1.jpg');
+    background-size: 100%;
 }
 
-.tempDiv:last-child(){
-    background-color: blueviolet;
-    flex-direction: column;
+
+
+.tempDiv{
+    background-color: rgba(68, 68, 68, 0.7);
+    text-align: center;
+    border: 3px solid black;
+    position: fixed;
+    bottom: 30px;
+    width: 16.5%;
+}
+
+.tempDiv p, h1 {
+    color:white;
+    opacity: 1;
+}
+
+.actualDiv{
+    background-color: rgba(68, 68, 68, 0.7);
+    text-align: center;
+    border: 3px solid black;
+    width:80%;
+}
+
+#Title{
+    width: 100%;
+    font-size: 48px;
 }
