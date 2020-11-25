@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import Grid from "@material-ui/core/Grid";
 import TempDiv from './TempDiv';
 import ActualTempDiv from './ActualTempDiv'
-
+import HideButton from './HideButton'
 export default class App extends Component {
   constructor(props){
     super (props);
@@ -41,8 +41,10 @@ export default class App extends Component {
         <h1 id="Title" align="center">Elysium Planitia</h1>
             <Grid item xs={12} align="center">       
                 <ActualTempDiv temp={data_[data_.length-1]}/>
+                <HideButton/>   
             </Grid>
-            <Grid item xs={1}>     
+            <Grid item xs={1}> 
+             
             </Grid>
             <Grid item xs={2} >
             <TempDiv temp={data_[0]}/>
@@ -53,7 +55,7 @@ export default class App extends Component {
             <Grid item xs={2}>
             <TempDiv temp={data_[2]}/>
             </Grid>
-            <Grid item xs={2}>
+            <Grid tem xs={2}>
             <TempDiv temp={data_[3]}/>
             </Grid>
             <Grid item xs={2}>
