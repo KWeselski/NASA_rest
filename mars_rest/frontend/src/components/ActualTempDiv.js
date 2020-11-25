@@ -23,8 +23,9 @@ export default class TemperatureDiv extends Component{
                     <div>
                         <h1>Temperature</h1>
                         <p>High Temperature:{h_temp[0]} &#8451;</p>
-                        <p>Min Temperature:{m_temp[0]} &#8451;</p>
                         <p>Avg Temperature:{a_temp[0]} &#8451;</p>
+                        <p>Min Temperature:{m_temp[0]} &#8451;</p>
+                        
                     </div>
             </Grid>        
         );
