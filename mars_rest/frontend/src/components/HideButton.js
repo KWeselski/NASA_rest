@@ -38,7 +38,7 @@ export default class HideButton extends Component {
         return (
             <div ref={this.wrapperRef} className='wrapper'>
                 <div className="nav">
-                    <ArrowUpwardIcon fontSize="large" className="nav__icon"            
+                    <ArrowUpwardIcon  style={{ fontSize: 48, color: "white" }} className="nav__icon"            
                     onClick={()=> this.handleClick()}/>
                 <div className='nav__body'>
                     

@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import TempDiv from './TempDiv';
 import ActualTempDiv from './ActualTempDiv'
 import HideButton from './HideButton'
+
 export default class App extends Component {
   constructor(props){
     super (props);
@@ -41,7 +42,7 @@ export default class App extends Component {
         <h1 id="Title" align="center">Elysium Planitia</h1>
             <Grid item xs={12} align="center">       
                 <ActualTempDiv temp={data_[data_.length-1]}/>
-                  
+                
             </Grid>
             <Grid item xs={12} align="center">       
             <HideButton/> 

@@ -18,7 +18,7 @@ html, body{
 
 
 .tempDiv{
-    background-color: rgba(68, 68, 68, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.5;
     text-align: center;
     border: 3px solid black;
@@ -40,7 +40,7 @@ html, body{
 }
 
 .actualDiv{
-    background-color: rgba(68, 68, 68, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     border: 3px solid black;
     width:80%;
@@ -74,6 +74,7 @@ html, body{
 
 .nav.is-nav-open {
     margin-bottom: 220px;
+    transform: rotate(180deg);
 }
 .nav {
     position: fixed;
@@ -82,7 +83,7 @@ html, body{
     font-size: 20px;
     cursor: pointer;
     transition: color .3s;
-    background-color: rgba(68, 68, 68, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     border: 3px solid black;
     bottom:0px;
     transition: margin 1s; 
@@ -90,6 +91,12 @@ html, body{
 
 .nav__icon:hover {
     color: #5eb2ff;
+}
+
+.nav__icon{
+    position: absolute;
+    left: 37.5%;
+    top: 7.5%;
 }
 .tempDiv.is-hide{
     margin-bottom: 230px;  

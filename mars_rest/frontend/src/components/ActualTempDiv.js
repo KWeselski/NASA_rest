@@ -1,6 +1,6 @@
 import React, {Component } from 'react';
 import Grid from "@material-ui/core/Grid";
-
+import Switch from '@material-ui/core/Switch'
 export default class TemperatureDiv extends Component{
        
     constructor(props,data){
@@ -22,10 +22,13 @@ export default class TemperatureDiv extends Component{
                     </div>
                     <div>
                         <h1>Temperature</h1>
-                        <p>High Temperature:{h_temp[0]} &#8451;</p>
-                        <p>Avg Temperature:{a_temp[0]} &#8451;</p>
-                        <p>Min Temperature:{m_temp[0]} &#8451;</p>
-                        
+                        <p>High Temperature:{h_temp[0]}&#8451;</p>
+                        <p>Avg Temperature:{a_temp[0]}&#8451;</p>
+                        <p>Min Temperature:{m_temp[0]}&#8451;</p>
+                        F<Switch
+                defaultChecked
+                color="default"
+                inputProps={{ 'aria-label': 'checkbox with default color' }}/>&#8451;  
                     </div>
             </Grid>        
         );
