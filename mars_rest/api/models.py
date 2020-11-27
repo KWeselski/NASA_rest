@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Temperature(models.Model):
-    Sol = models.CharField(max_length=10)
+    Sol = models.CharField(max_length=10,db_index=True,unique=True)
     max_temp = models.CharField(max_length=15)
     min_temp = models.CharField(max_length=15)
     avg_temp = models.CharField(max_length=15)

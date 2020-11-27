@@ -15,11 +15,19 @@ export default class TemperatureDiv extends Component{
         return(
             <div class="tempDiv">
                 <h1>Sol: {da.Sol}</h1>
+                <div>
                 <p>High Temp:{h_temp[0]}&#8451;</p>
                 <p>Avg Temp:{a_temp[0]}&#8451;</p>
                 <p>Min Temp:{m_temp[0]}&#8451;</p>            
-                <p>Day: {date[0]}</p>           
+                <p>Day: {date[0]}</p> 
+                </div>
+                <div>
+                    <p>Max speed:{da.max_wind}</p>
+                    <p>Avg speed:{da.avg_wind}</p>
+                    <p>Min speed:{da.min_wind}</p>
+                </div>          
             </div>
+
         );
     }
 }
