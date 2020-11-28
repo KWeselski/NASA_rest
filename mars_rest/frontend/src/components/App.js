@@ -6,6 +6,7 @@ import ActualTempDiv from './ActualTempDiv'
 import HideButton from './HideButton'
 
 export default class App extends Component {
+  
   constructor(props){
     super (props);
     this.state = {
@@ -13,8 +14,9 @@ export default class App extends Component {
        loaded: false,
        placeholder: "Loading"
     }
+    
   }
-
+  
   componentDidMount(){
       fetch("api/").then(response => {
           if (response.status > 400) {
