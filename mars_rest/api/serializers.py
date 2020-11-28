@@ -6,5 +6,5 @@ class TemperatureSerialzer(serializers.ModelSerializer):
         model = Temperature
         fields = ['Sol', 'max_temp','min_temp','avg_temp',
                 'max_wind','min_wind','avg_wind',
-                'max_press','min_press','avg_press',
+                'max_press','min_press','avg_press','direction',
                 'season','first_utc','last_utc']

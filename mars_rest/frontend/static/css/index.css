@@ -12,7 +12,7 @@ html, body{
     left: 0;
     top: 0;
     background-image: url('../images/mars_1.jpg');
-    background-size: 100%;
+    background-size: cover;
 }
 
 
@@ -53,11 +53,20 @@ html, body{
 
 .actualDiv div:nth-child(1) {
     float: left;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .actualDiv div:nth-child(2) {
+    float: left;
+    margin-left: 15%;
+}
+
+.actualDiv div:nth-child(3) {
     float: right;
-    margin-right: 20%;
+    margin-right: 5%;
+}
+.actualDiv div:nth-child(4) {
+    float: right;
+    margin-right: 5%;
 }
 
 #Title{
@@ -71,9 +80,8 @@ html, body{
     height: 60px;
        
 }
-
 .nav.is-nav-open {
-    margin-bottom: 220px;
+    margin-bottom: 230px;
     transform: rotate(180deg);
 }
 .nav {
@@ -102,4 +110,11 @@ html, body{
     margin-bottom: 230px;  
     transition: margin 1s;
     opacity: 1;
+}
+
+.secDiv p{
+    font-size: 18px;
+}
+.secDiv h1{
+    font-size: 36px;
 }

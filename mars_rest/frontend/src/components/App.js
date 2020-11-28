@@ -51,19 +51,19 @@ export default class App extends Component {
 
             </Grid>
             <Grid item xs={2} >
-            <TempDiv temp={data_[0]}/>
+            <TempDiv temp={data_[data_.length-6]}/>
             </Grid>
             <Grid item xs={2}>
-            <TempDiv temp={data_[1]}/>
+            <TempDiv temp={data_[data_.length-5]}/>
             </Grid>
             <Grid item xs={2}>
-            <TempDiv temp={data_[2]}/>
+            <TempDiv temp={data_[data_.length-4]}/>
             </Grid>
             <Grid tem xs={2}>
-            <TempDiv temp={data_[3]}/>
+            <TempDiv temp={data_[data_.length-3]}/>
             </Grid>
             <Grid item xs={2}>
-            <TempDiv temp={data_[4]}/>
+            <TempDiv temp={data_[data_.length-2]}/>
             </Grid> 
             <Grid item xs={1}>
             
