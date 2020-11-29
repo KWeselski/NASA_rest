@@ -132,9 +132,7 @@ html, body{
 }
 
 .toggle.F > .notch{
-    background:red;
     transform: translate(42px,0);
-    box-shadow: 0 0 5px black;
 }
 
 .notch {
@@ -146,7 +144,7 @@ html, body{
     top:2px;
     left:1px;
     box-shadow: 0 0 5px red;
-    transition: all 0.3s ease ;
+    transition: all 0.3s ease;
 }
 
 #tog{
