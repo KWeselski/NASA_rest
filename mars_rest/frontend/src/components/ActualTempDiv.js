@@ -68,7 +68,7 @@ export default class TemperatureDiv extends Component{
             this.switchTemperature(); degree=celsius;}
         
         
-        console.log(celsius)
+        
         return(
             <Grid class="actualDiv" container>
                     <div>
@@ -77,14 +77,19 @@ export default class TemperatureDiv extends Component{
                         <h2>{this.state.date}</h2>
                         <p>Season: {da.season}</p>
                         <p>Wind Direction: {da.direction}</p> 
-                        <Toogle toggled={this.state.toggled.toString()} onClick={() => this.setState(prevState => ({toggled:!prevState.toggled}))}/>                         
+                                             
                     </div>
                     <div>
                         <h1>Temperature</h1>
                         <p>High Temp:{this.state.h_temp}{degree}</p>
                         <p>Avg Temp:{this.state.a_temp}{degree}</p>
                         <p>Min Temp:{this.state.m_temp}{degree}</p> 
-                        
+                        <div id="tog"><p>&#8457;</p>
+                        <Toogle toggled={this.state.toggled.toString()}
+                         onClick={() => this.setState(prevState => ({toggled:!prevState.toggled}))}></Toogle>
+                         <p>&#8451;</p>
+                         </div>
+                         
                     </div>
                     <div class="secDiv">
                         <h1>Wind Speed [m/s]</h1>

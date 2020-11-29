@@ -120,25 +120,39 @@ html, body{
 }
 
 .toggle {
-    height:45px;
-    width:100px;
+    overflow: hidden;
+    height:30px;
+    width:75px;
     border-radius: 50px;
     border: 1px solid black;
     background: rgb(58, 46, 46);
-    position:relative; 
+    position: relative;
+    cursor: pointer;
+    margin-right: 39px;
 }
 
-.toggle.F{
-    background:yellow;
+.toggle.F > .notch{
+    background:red;
+    transform: translate(42px,0);
+    box-shadow: 0 0 5px black;
 }
 
 .notch {
-    height:40px;
-    width:40px;
+    height:25px;
+    width:25px;
     border-radius: 50%;
     background:black;
     position: absolute;
     top:2px;
     left:1px;
     box-shadow: 0 0 5px red;
+    transition: all 0.3s ease ;
+}
+
+#tog{
+    display: flex;
+    margin-left: 18%;
+}
+#tog p{
+    margin-top: 3px;
 }
